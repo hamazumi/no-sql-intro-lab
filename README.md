@@ -46,9 +46,21 @@ MongoDB does not support advanced analytics and joins like SQL databases support
 
 5. Mongo DBs are organized into documents. Describe an example of a table in SQL that contains users, and then describe the equivalent DB setup in Mongo.
 
-SQL stores data in tables, where columns are the attributes and rows are the value/property of the table. all these tables live inside databases.
+- **Example user table in Postgres:**
 
-In MongoDB, data is stored in a collection, thats similar to MySQL tables. a collectiong consists of many documents in which data is stored in JSON format of key-value
+  | id  | username   | password | email             |
+  | --- | ---------- | -------- | ----------------- |
+  | 1   | annazocher | 12345678 | anna.zocher@ga.co |
+
+- **Example user document in Mongo:**
+
+  ```Mongo
+  {   _id: <ObjectID>,
+      username: "annazocher",
+      password: "12345678",
+      email: "anna.zocher@ga.co"
+  }
+  ```
 
 6. What is an example situation where a Mongo database makes sense versus a non-relational db?
 
